@@ -1,5 +1,7 @@
 for (let i = 0; i < 10000; i++) {
-    console.log(`This is message number ${i + 1}`);
+    if (i % 1000 === 0) {
+        console.log(`This is message number ${i + 1}`);
+    }
 }
 
 function generateLargeArray(size) {
@@ -7,7 +9,4 @@ function generateLargeArray(size) {
 }
 
 const largeArray = generateLargeArray(10000);
-console.log(largeArray);
-
-
-
+console.log(largeArray.join(', ')); // Displaying the array as a comma-separated string for better readability
