@@ -1,4 +1,4 @@
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 10000000; i++) {
     if (i % 1000 === 0) {
         console.log(`This is message number ${i + 1}`);
     }
